@@ -40,7 +40,7 @@ Currently, I'm actively looking for a **Data Engineering Internship** starting i
 *   **Summary:** Conducted an in-depth Exploratory Data Analysis (EDA) on transaction logs from a grocery-delivery website. Created interactive dashboards to track logistics KPIs, focusing on restocking rates and supply chain optimization.
 *   **Keywords:** `Data Visualization`, `EDA`, `Pandas`
 
-#### 5. [YOWL: Social Comments Platform](link_vers_le_repo)
+#### 5. [YOWL: Social Comments Platform](https://github.com/Donassigue/YOWL.git)
 **Context:** Full-Stack Web Development.
 *   **Summary:** Designed and developed a complete web application integrating a dynamic social layer for web comments. Built a robust RESTful API and a reactive frontend.
 *   **Keywords:** `Laravel (PHP)`, `Vue.js`, `Full-Stack`
