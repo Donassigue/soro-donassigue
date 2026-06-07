@@ -25,7 +25,7 @@ Currently, I'm actively looking for a **Data Engineering Internship** starting i
 *   **Summary:** Deployed a complete Big Data infrastructure on Microsoft Azure. The project features continuous web scraping of France Info news feeds and complex predictive modeling for breast cancer prediction and genetic classification.
 *   **Keywords:** `Azure`, `Web Scraping`, `Machine Learning`, `Big Data`
 
-#### 2. [Real-Time Sentiment Analysis Pipeline](link_vers_le_repo)
+#### 2. [Real-Time Sentiment Analysis Pipeline](https://github.com/Donassigue/sentiment-analysis.git)
 **Context:** Streaming data architecture.
 *   **Summary:** Built a real-time data engineering pipeline to consume API streams. Developed automated ETL processes using Kafka (producers/consumers) to securely load data into PostgreSQL, and integrated an LSTM neural network for live sentiment classification.
 *   **Keywords:** `Apache Kafka`, `PostgreSQL`, `LSTM`, `Python`
