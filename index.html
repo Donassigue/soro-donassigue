@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Soro Donassigué Mathieu | Full-Stack & Data Engineer</title>
+
+    <meta name="description"
+        content="Portfolio de Soro Donassigué Mathieu - Développeur Full Stack, Data Engineer, Data Scientist et spécialiste IA.">
+
+    <meta name="keywords"
+        content="Laravel, VueJS, Python, Kafka, PostgreSQL, Data Engineer, IA, Portfolio">
+
+    <meta name="author" content="Soro Donassigué Mathieu">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--=========================
+            CURSOR
+    ==========================-->
+
+    <div class="cursor"></div>
+
+    <!--=========================
+        BACKGROUND EFFECT
+    ==========================-->
+
+    <div class="background-grid"></div>
+
+    <canvas id="particles"></canvas>
+
+    <!--=========================
+            HEADER
+    ==========================-->
+
+    <header id="header">
+
+        <div class="container">
+
+            <a href="#" class="logo">
+
+                <span>&lt;</span>
+
+                Mathieu
+
+                <span>/&gt;</span>
+
+            </a>
+
+            <nav id="navbar">
+
+                <ul>
+
+                    <li><a href="#hero">Accueil</a></li>
+
+                    <li><a href="#about">À propos</a></li>
+
+                    <li><a href="#education">Parcours</a></li>
+
+                    <li><a href="#skills">Compétences</a></li>
+
+                    <li><a href="#projects">Projets</a></li>
+
+                    <li><a href="#experience">Expérience</a></li>
+
+                    <li><a href="#contact">Contact</a></li>
+
+                </ul>
+
+            </nav>
+
+            <button class="menu-btn">
+
+                <i class="fas fa-bars"></i>
+
+            </button>
+
+        </div>
+
+    </header>
+
+    <!--=========================
+            HERO
+    ==========================-->
+
+    <section id="hero">
+
+        <div class="container hero-grid">
+
+            <div class="hero-content">
+
+                <p class="subtitle">
+
+                    👋 Bonjour, je suis
+
+                </p>
+
+                <h1>
+
+                    Soro Donassigué Mathieu
+
+                </h1>
+
+                <h2 id="typing-text">
+
+                    Développeur Full-Stack
+
+                </h2>
+
+                <p class="hero-description">
+
+                    Je conçois des applications web performantes, des
+                    pipelines de données temps réel et des solutions
+                    d'Intelligence Artificielle capables de transformer
+                    des données massives en informations exploitables.
+
+                </p>
+
+                <div class="hero-location">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    Abidjan, Côte d'Ivoire
+
+                </div>
+
+                <div class="hero-buttons">
+
+                    <a href="#projects" class="btn primary">
+
+                        Voir mes projets
+
+                    </a>
+
+                    <a href="#contact" class="btn secondary">
+
+                        Me contacter
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="hero-image">
+
+                <div class="glass-card">
+
+                    <div class="circle circle1"></div>
+
+                    <div class="circle circle2"></div>
+
+                    <div class="profile-icon">
+
+                        <i class="fas fa-code"></i>
+
+                    </div>
+
+                    <div class="stats">
+
+                        <div class="stat">
+
+                            <h3 class="counter" data-target="3">0</h3>
+
+                            <p>Applications</p>
+
+                        </div>
+
+                        <div class="stat">
+
+                            <h3 class="counter" data-target="5">0</h3>
+
+                            <p>Technologies majeures</p>
+
+                        </div>
+
+                        <div class="stat">
+
+                            <h3 class="counter" data-target="2">0</h3>
+
+                            <p>Domaines d'expertise</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--=========================
+            ABOUT
+    ==========================-->
+
+    <section id="about" class="section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>À propos</span>
+
+                <h2>Construire des produits data intelligents</h2>
+
+            </div>
+
+            <div class="about-grid">
+
+                <div class="about-text reveal">
+
+                    <p>
+
+                        Développeur Full-Stack et Data Engineer, je conçois
+                        des solutions numériques complètes allant de
+                        l'architecture backend jusqu'à l'exploitation
+                        intelligente des données.
+
+                    </p>
+
+                    <p>
+
+                        Mon domaine d'expertise couvre la création
+                        d'API performantes avec Laravel, le développement
+                        d'interfaces modernes avec Vue.js ainsi que
+                        la mise en place de pipelines de données
+                        distribués basés sur Apache Kafka.
+
+                    </p>
+
+                    <p>
+
+                        Je m'intéresse particulièrement aux architectures
+                        Big Data, au Machine Learning, à la Computer Vision
+                        et à la conception de systèmes capables de traiter
+                        des flux de données en temps réel.
+
+                    </p>
+
+                </div>
+
+                <div class="about-cards reveal">
+
+                    <div class="mini-card">
+
+                        <i class="fa-solid fa-database"></i>
+
+                        <h3>Data Engineering</h3>
+
+                        <p>
+
+                            Pipelines temps réel, PostgreSQL,
+                            Kafka et traitements distribués.
+
+                        </p>
+
+                    </div>
+
+                    <div class="mini-card">
+
+                        <i class="fa-solid fa-laptop-code"></i>
+
+                        <h3>Développement Web</h3>
+
+                        <p>
+
+                            Laravel, Vue.js,
+                            API REST, architectures MVC.
+
+                        </p>
+
+                    </div>
+
+                    <div class="mini-card">
+
+                        <i class="fa-solid fa-brain"></i>
+
+                        <h3>IA</h3>
+
+                        <p>
+
+                            Machine Learning,
+                            Deep Learning,
+                            Computer Vision.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--=========================
+        EDUCATION
+    ==========================-->
+
+    <section id="education" class="section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>Parcours</span>
+
+                <h2>Formation académique</h2>
+
+            </div>
+
+            <div class="timeline">
+
+                <div class="timeline-item reveal">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <span>2025 - 2026</span>
+
+                        <h3>
+
+                            Spécialisation Data Science &
+                            Intelligence Artificielle
+
+                        </h3>
+
+                        <p>
+
+                            Epitech Coding Academy Abidjan /
+                            GIZ Wecode
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="timeline-item reveal">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <span>Bac+2</span>
+
+                        <h3>
+
+                            MIAGE
+
+                        </h3>
+
+                        <p>
+
+                            Université Félix Houphouët-Boigny
+                            de Cocody
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="timeline-item reveal">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <span>Baccalauréat</span>
+
+                        <h3>
+
+                            Série D
+
+                        </h3>
+
+                        <p>
+
+                            Lycée Moderne 1 Agboville
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- La suite arrive dans la Partie 2 -->
+     <!--=====================================
+            COMPÉTENCES
+======================================-->
+
+<section id="skills" class="section">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>Compétences</span>
+
+            <h2>Technologies & Expertises</h2>
+
+        </div>
+
+        <div class="skills-grid">
+
+            <!-- Data -->
+
+            <div class="skill-card reveal">
+
+                <div class="skill-icon">
+
+                    <i class="fa-solid fa-database"></i>
+
+                </div>
+
+                <h3>Data Engineering & IA</h3>
+
+                <div class="badges">
+
+                    <span>Python</span>
+                    <span>Apache Kafka</span>
+                    <span>PostgreSQL</span>
+                    <span>Streaming</span>
+                    <span>LSTM</span>
+                    <span>Computer Vision</span>
+
+                </div>
+
+            </div>
+
+            <!-- FullStack -->
+
+            <div class="skill-card reveal">
+
+                <div class="skill-icon">
+
+                    <i class="fa-solid fa-code"></i>
+
+                </div>
+
+                <h3>Développement Full-Stack</h3>
+
+                <div class="badges">
+
+                    <span>Laravel</span>
+                    <span>Vue.js</span>
+                    <span>PHP</span>
+                    <span>JavaScript</span>
+                    <span>MySQL</span>
+                    <span>REST API</span>
+
+                </div>
+
+            </div>
+
+            <!-- Divers -->
+
+            <div class="skill-card reveal">
+
+                <div class="skill-icon">
+
+                    <i class="fa-solid fa-microchip"></i>
+
+                </div>
+
+                <h3>Autres compétences</h3>
+
+                <div class="badges">
+
+                    <span>Azure</span>
+                    <span>Robotique</span>
+                    <span>Impression 3D</span>
+                    <span>Git</span>
+                    <span>Linux</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--=====================================
+            PROJETS
+======================================-->
+
+<section id="projects" class="section">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>Portfolio</span>
+
+            <h2>Quelques réalisations</h2>
+
+        </div>
+
+        <div class="projects-grid">
+
+            <!-- Projet 1 -->
+
+            <article class="project-card reveal">
+
+                <div class="project-content">
+
+                    <h3>Real-time Sentiment Analysis Pipeline</h3>
+
+                    <p>
+
+                        Pipeline Big Data de traitement temps réel basé sur
+                        Apache Kafka permettant d'analyser automatiquement
+                        les sentiments grâce à un modèle LSTM et de stocker
+                        les résultats dans PostgreSQL.
+
+                    </p>
+
+                    <div class="tags">
+
+                        <span>Python</span>
+                        <span>Kafka</span>
+                        <span>LSTM</span>
+                        <span>PostgreSQL</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            <!-- Projet 2 -->
+
+            <article class="project-card reveal">
+
+                <div class="project-content">
+
+                    <h3>YOWL</h3>
+
+                    <p>
+
+                        Plateforme sociale permettant aux internautes
+                        d'ajouter des commentaires, des avis et des
+                        discussions directement sur n'importe quel site web.
+
+                    </p>
+
+                    <div class="tags">
+
+                        <span>Laravel</span>
+                        <span>Vue.js</span>
+                        <span>MySQL</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            <!-- Projet 3 -->
+
+            <article class="project-card reveal">
+
+                <div class="project-content">
+
+                    <h3>Live Corp</h3>
+
+                    <p>
+
+                        Infrastructure Big Data déployée sur Microsoft Azure
+                        exploitant le web scraping massif et des traitements
+                        distribués pour collecter et valoriser les données.
+
+                    </p>
+
+                    <div class="tags">
+
+                        <span>Azure</span>
+                        <span>Python</span>
+                        <span>Big Data</span>
+                        <span>Web Scraping</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--=====================================
+        CERTIFICATIONS
+======================================-->
+
+<section id="certifications" class="section">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>Certifications</span>
+
+            <h2>Formation continue</h2>
+
+        </div>
+
+        <div class="cards-grid">
+
+            <div class="info-card reveal">
+
+                <i class="fa-solid fa-award"></i>
+
+                <h3>IBM Web Application Development Professional Certificate</h3>
+
+                <p>
+
+                    IBM SkillsBuild
+
+                </p>
+
+                <strong>Score : 93%</strong>
+
+            </div>
+
+            <div class="info-card reveal">
+
+                <i class="fa-solid fa-graduation-cap"></i>
+
+                <h3>Personal and Family Financial Planning</h3>
+
+                <p>
+
+                    University of Florida — Coursera
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--=====================================
+        EXPÉRIENCE
+======================================-->
+
+<section id="experience" class="section">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>Expérience</span>
+
+            <h2>Parcours professionnel</h2>
+
+        </div>
+
+        <div class="timeline">
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <h3>
+
+                        Instructeur Robotique &
+                        Impression 3D
+
+                    </h3>
+
+                    <p>
+
+                        Centre Ivoirien de Robotique (CIR)
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <h3>
+
+                        Instructeur Programmation &
+                        Robotique
+
+                    </h3>
+
+                    <p>
+
+                        MeIzone
+
+                    </p>
+
+                    <p>
+
+                        Formation et accompagnement de jeunes de
+                        6 à 18 ans aux bases de la programmation,
+                        de la robotique et de la pensée algorithmique.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--=====================================
+            CONTACT
+======================================-->
+
+<section id="contact" class="section">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>Contact</span>
+
+            <h2>Travaillons ensemble</h2>
+
+        </div>
+
+        <div class="contact-wrapper">
+
+            <div class="contact-info">
+
+                <h3>
+
+                    Disponible pour de nouveaux projets.
+
+                </h3>
+
+                <p>
+
+                    N'hésitez pas à me contacter pour discuter
+                    d'un projet, d'une collaboration ou d'une
+                    opportunité professionnelle.
+
+                </p>
+
+                <div class="contact-links">
+
+                    <a href="#" target="_blank">
+
+                        <i class="fab fa-github"></i>
+
+                        GitHub
+
+                    </a>
+
+                    <a href="#" target="_blank">
+
+                        <i class="fab fa-linkedin"></i>
+
+                        LinkedIn
+
+                    </a>
+
+                    <a href="mailto:votre@email.com">
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                        Email
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <form class="contact-form">
+
+                <input
+                    type="text"
+                    placeholder="Votre nom"
+                    required>
+
+                <input
+                    type="email"
+                    placeholder="Votre email"
+                    required>
+
+                <textarea
+                    rows="6"
+                    placeholder="Votre message"></textarea>
+
+                <button class="btn primary">
+
+                    Envoyer
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--=====================================
+            FOOTER
+======================================-->
+
+<footer>
+
+    <div class="container">
+
+        <p>
+
+            © 2026 Soro Donassigué Mathieu
+
+        </p>
+
+        <p>
+
+            Développeur Full-Stack • Data Engineer • IA
+
+        </p>
+
+    </div>
+
+</footer>
+
+<button id="backToTop">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
