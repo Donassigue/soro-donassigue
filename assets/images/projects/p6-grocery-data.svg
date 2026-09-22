@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400">
+  <rect width="640" height="400" fill="#1A1E27"/>
+  <g stroke="#2A303C" stroke-width="1">
+    <line x1="0" y1="100" x2="640" y2="100"/>
+    <line x1="0" y1="200" x2="640" y2="200"/>
+    <line x1="0" y1="300" x2="640" y2="300"/>
+    <line x1="160" y1="0" x2="160" y2="400"/>
+    <line x1="320" y1="0" x2="320" y2="400"/>
+    <line x1="480" y1="0" x2="480" y2="400"/>
+  </g>
+  <g transform="translate(320,200)" stroke="#7C97FF" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M-190,90 L-190,-90 M-190,90 L190,90"/>
+    <rect x="-150" y="10" width="42" height="80" fill="#7C97FF" fill-opacity="0.35" stroke="none"/>
+    <rect x="-80" y="-40" width="42" height="130" fill="#7C97FF" fill-opacity="0.35" stroke="none"/>
+    <rect x="-10" y="-10" width="42" height="100" fill="#7C97FF" fill-opacity="0.35" stroke="none"/>
+    <rect x="60" y="-65" width="42" height="155" fill="#7C97FF" fill-opacity="0.5" stroke="none"/>
+    <path d="M-165,-30 L-95,-70 L-25,20 L45,-95" stroke="#E6B04C" stroke-width="4"/>
+  </g>
+</svg>

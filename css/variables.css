@@ -1,0 +1,168 @@
+/* ==========================================================================
+   RESET MINIMAL
+   ========================================================================== */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+* { margin: 0; padding: 0; }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+img, svg { display: block; max-width: 100%; }
+
+a { color: inherit; text-decoration: none; }
+
+button, input, select, textarea { font: inherit; color: inherit; }
+
+button { cursor: pointer; background: none; border: none; }
+
+ul, ol { list-style: none; }
+
+/* ==========================================================================
+   DESIGN TOKENS
+   ========================================================================== */
+
+:root {
+  /* -- Couleurs de base (thème clair, par défaut) -- */
+  --color-paper:      #F4F5F8;   /* fond principal */
+  --color-paper-raised:#FFFFFF;  /* cartes / surfaces surélevées */
+  --color-ink:         #14171F;  /* texte principal */
+  --color-slate:        #5B6472; /* texte secondaire */
+  --color-line:          #7C8AA3; /* bordures / séparateurs — visibles (≈3:1) */
+  --color-line-soft:      #E3E6EC; /* séparateurs très discrets (hr, fonds alternés) */
+
+  --color-cobalt:       #2F55D4; /* accent primaire */
+  --color-cobalt-ink:   #1E3AA0; /* accent primaire, contraste renforcé */
+  --color-cobalt-tint:  rgba(47, 85, 212, 0.09); /* fond teinté pour badges/tags */
+  --color-amber:        #9C6210; /* accent secondaire / signal */
+  --color-amber-tint:   rgba(184, 118, 21, 0.1);
+
+  --color-success:      #2F8F5B;
+  --color-danger:       #C4442E;
+
+  /* -- Typographie -- */
+  --font-sans: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'IBM Plex Mono', 'SFMono-Regular', Consolas, monospace;
+
+  --fs-xs:   0.8125rem;
+  --fs-sm:   0.9375rem;
+  --fs-base: 1rem;
+  --fs-md:   1.125rem;
+  --fs-lg:   1.375rem;
+  --fs-xl:   clamp(1.75rem, 1.4rem + 1.5vw, 2.5rem);
+  --fs-2xl:  clamp(2.25rem, 1.6rem + 2.8vw, 3.75rem);
+
+  --lh-tight: 1.15;
+  --lh-normal: 1.5;
+  --lh-relaxed: 1.7;
+
+  /* -- Espacements (échelle) -- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4.5rem;
+  --space-9: 7rem;
+
+  /* -- Rayons -- */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 14px;
+  --radius-full: 999px;
+
+  /* -- Ombres (sobres, jamais décoratives) -- */
+  --shadow-sm: 0 1px 2px rgba(20, 23, 31, 0.06);
+  --shadow-md: 0 6px 20px -6px rgba(20, 23, 31, 0.12);
+
+  /* -- Layout -- */
+  --container-max: 1140px;
+  --container-pad: 1.25rem;
+  --navbar-height: 72px;
+
+  /* -- Transitions -- */
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-fast: 150ms var(--ease);
+  --transition-base: 250ms var(--ease);
+}
+
+/* -- Thème sombre : bleu nuit plutôt que noir plat, pour un rendu plus
+      posé et professionnel qu'un contraste noir/blanc dur -- */
+:root[data-theme="dark"] {
+  --color-paper:        #10182A;
+  --color-paper-raised: #182233;
+  --color-ink:          #EAEDF6;
+  --color-slate:        #93A1BC;
+  --color-line:         #5A6EA0;
+  --color-line-soft:    #202B42;
+
+  --color-cobalt:       #6E93FF;
+  --color-cobalt-ink:   #A4BBFF;
+  --color-cobalt-tint:  rgba(110, 147, 255, 0.14);
+  --color-amber:        #F0B84C;
+  --color-amber-tint:   rgba(240, 184, 76, 0.14);
+
+  --shadow-sm: 0 1px 2px rgba(4, 8, 20, 0.35);
+  --shadow-md: 0 14px 34px -10px rgba(4, 8, 20, 0.55);
+}
+
+/* ==========================================================================
+   BASE
+   ========================================================================== */
+
+body {
+  font-family: var(--font-sans);
+  font-size: var(--fs-base);
+  line-height: var(--lh-normal);
+  color: var(--color-ink);
+  background-color: var(--color-paper);
+  transition: background-color var(--transition-base), color var(--transition-base);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 600;
+  line-height: var(--lh-tight);
+  letter-spacing: -0.01em;
+}
+
+h2 { font-size: var(--fs-xl); }
+h3 { font-size: var(--fs-md); }
+
+p { max-width: 62ch; }
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  background: var(--color-cobalt);
+  color: #fff;
+  padding: var(--space-2) var(--space-4);
+  z-index: 1000;
+  border-radius: var(--radius-sm);
+}
+
+.skip-link:focus {
+  left: var(--space-4);
+  top: var(--space-4);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-cobalt);
+  outline-offset: 2px;
+}

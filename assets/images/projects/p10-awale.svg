@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400">
+  <rect width="640" height="400" fill="#1A1E27"/>
+  <g stroke="#2A303C" stroke-width="1">
+    <line x1="0" y1="100" x2="640" y2="100"/>
+    <line x1="0" y1="200" x2="640" y2="200"/>
+    <line x1="0" y1="300" x2="640" y2="300"/>
+    <line x1="160" y1="0" x2="160" y2="400"/>
+    <line x1="320" y1="0" x2="320" y2="400"/>
+    <line x1="480" y1="0" x2="480" y2="400"/>
+  </g>
+  <g transform="translate(320,200)">
+    <g stroke="#E6B04C" stroke-width="1.6" opacity="0.7">
+      <line x1="-190" y1="-110" x2="-40" y2="0"/>
+      <line x1="-190" y1="-37" x2="-40" y2="0"/>
+      <line x1="-190" y1="37" x2="-40" y2="0"/>
+      <line x1="-190" y1="110" x2="-40" y2="0"/>
+      <line x1="-260" y1="0" x2="-40" y2="0"/>
+    </g>
+    <g stroke="#7C97FF" stroke-width="2.5">
+      <path d="M-22,0 L150,0" stroke-linecap="round"/>
+      <path d="M140,-9 L150,0 L140,9" fill="none"/>
+    </g>
+    <circle cx="-190" cy="-110" r="7" fill="#E6B04C" stroke="none"/>
+    <circle cx="-190" cy="-37" r="7" fill="#E6B04C" stroke="none"/>
+    <circle cx="-190" cy="37" r="7" fill="#E6B04C" stroke="none"/>
+    <circle cx="-190" cy="110" r="7" fill="#E6B04C" stroke="none"/>
+    <circle cx="-260" cy="0" r="7" fill="#E6B04C" stroke="none"/>
+    <circle cx="-40" cy="0" r="13" fill="#7C97FF" stroke="none"/>
+    <rect x="156" y="-14" width="28" height="28" rx="6" fill="none" stroke="#7C97FF" stroke-width="4"/>
+  </g>
+</svg>

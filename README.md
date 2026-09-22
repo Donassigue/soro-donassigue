@@ -1,73 +1,104 @@
-# Hi there, I'm Soro Donassigué Mathieu 👋
+# Portfolio — Prénom Nom
 
-### 🚀 Data Engineer & AI Enthusiast 
+Portfolio professionnel de **Prénom Nom**, Développeur Full-Stack & Data Engineer
+spécialisé en Data Science et Intelligence Artificielle. Construit en HTML, CSS et
+JavaScript natifs, sans framework ni dépendance de build.
 
-I am a Data Engineering and Artificial Intelligence student based in Abidjan. With a strong foundation in software engineering (MIAGE, UFHB) combined with an intensive specialization in Data/AI (EPITECH), I build robust data pipelines, design real-time architectures, and train machine learning models. 
+## Aperçu
 
-Beyond coding, I'm passionate about the intersection of AI and hardware, particularly computer vision, drones, and predictive maintenance. I also love sharing knowledge as a Robotics & 3D Printing Instructor. 
+Le portfolio présente le profil, les compétences, une sélection de projets
+filtrables par domaine, les services proposés en freelance, le parcours
+(expériences et formations), et un formulaire de contact.
 
-Currently, I'm actively looking for a **Data Engineering Internship** starting in August 2026!
+## Stack technique
 
----
+- **HTML5** — structure sémantique
+- **CSS3** — variables natives, mobile-first, thème clair/sombre
+- **JavaScript ES6+** (modules natifs, aucun bundler)
+- **Formspree** pour le traitement du formulaire de contact (aucun backend requis)
 
-### 🛠️ Tech Stack & Tools
+Aucun framework (React, Vue, Angular) ni bibliothèque CSS (Bootstrap, Tailwind)
+n'est utilisé.
 
-* **Data Engineering & Cloud:** `Apache Kafka` | `PostgreSQL` | `Microsoft Azure` | `ETL Pipelines`
-* **Programming:** `Python` | `SQL` | `PHP (Laravel)` | `JavaScript (Vue.js)`
-* **Data Science & AI:** `Machine Learning` | `Deep Learning (LSTM)` | `NLP` | `Pandas` | `BeautifulSoup` | `Selenium`
+## Architecture
 
----
+```text
+portfolio/
+├── index.html              → structure de toutes les sections
+├── assets/
+│   ├── images/              → profil, projets, certifications, icônes
+│   ├── fonts/                → polices locales éventuelles
+│   └── documents/cv.pdf      → CV téléchargeable
+├── css/
+│   ├── variables.css         → reset, tokens de design, thème clair/sombre
+│   ├── layout.css             → structure des sections, grilles, responsive
+│   └── components.css         → boutons, cartes, formulaire, navbar, etc.
+├── js/
+│   ├── main.js                → point d'entrée, orchestration des modules
+│   ├── data.js                  → données (projets, compétences, services, parcours)
+│   └── ui.js                     → logique de rendu et d'interaction
+├── favicon/
+├── README.md
+└── .gitignore
+```
 
-### 💻 Featured Projects
+Les données (projets, compétences, services, expériences, certifications) sont
+centralisées dans `js/data.js`, séparées de la présentation. Pour ajouter ou
+modifier du contenu, il suffit d'éditer ce fichier — aucune modification du
+HTML n'est nécessaire.
 
-#### 1. [Live Corp: Big Data & Health Prediction](link_vers_le_repo)
-**Context:** End-to-end cloud data architecture.
-*   **Summary:** Deployed a complete Big Data infrastructure on Microsoft Azure. The project features continuous web scraping of France Info news feeds and complex predictive modeling for breast cancer prediction and genetic classification.
-*   **Keywords:** `Azure`, `Web Scraping`, `Machine Learning`, `Big Data`
+## Fonctionnalités
 
-#### 2. [Real-Time Sentiment Analysis Pipeline](https://github.com/Donassigue/sentiment-analysis.git)
-**Context:** Streaming data architecture.
-*   **Summary:** Built a real-time data engineering pipeline to consume API streams. Developed automated ETL processes using Kafka (producers/consumers) to securely load data into PostgreSQL, and integrated an LSTM neural network for live sentiment classification.
-*   **Keywords:** `Apache Kafka`, `PostgreSQL`, `LSTM`, `Python`
+- Navigation fluide avec navbar sticky et mise en évidence de la section active
+- Menu mobile
+- Thème clair / sombre avec persistance (`localStorage`)
+- Génération dynamique des cartes projets, compétences, services et parcours
+- Filtres de projets par domaine (Web, Data Engineering, Data Science, IA)
+- Formulaire de contact fonctionnel via Formspree
+- Animations légères au scroll (désactivées si `prefers-reduced-motion`)
+- Bouton retour en haut de page
 
-#### 3. [NLP Topic Modeling on Classic Literature](link_vers_le_repo)
-**Context:** Unstructured data processing.
-*   **Summary:** Processed a massive corpus of 52 classic English literature books. Applied advanced NLP cleaning techniques and implemented Topic Modeling algorithms to automatically extract and classify latent subjects at scale.
-*   **Keywords:** `NLP`, `Topic Modeling`, `NLTK / Gensim`
+## Installation et utilisation
 
-#### 4. [E-Grocery DataViz & EDA](link_vers_le_repo)
-**Context:** Analytics and Business Intelligence.
-*   **Summary:** Conducted an in-depth Exploratory Data Analysis (EDA) on transaction logs from a grocery-delivery website. Created interactive dashboards to track logistics KPIs, focusing on restocking rates and supply chain optimization.
-*   **Keywords:** `Data Visualization`, `EDA`, `Pandas`
+Aucune installation n'est nécessaire. Deux options pour visualiser le site en local :
 
-#### 5. [YOWL: Social Comments Platform](https://github.com/Donassigue/YOWL.git)
-**Context:** Full-Stack Web Development.
-*   **Summary:** Designed and developed a complete web application integrating a dynamic social layer for web comments. Built a robust RESTful API and a reactive frontend.
-*   **Keywords:** `Laravel (PHP)`, `Vue.js`, `Full-Stack`
+**Option 1 — ouverture directe**
+Ouvrir `index.html` dans un navigateur.
 
-#### 6. [Advanced Web Scraping: HTML Tags in a Haystack](link_vers_le_repo)
-**Context:** Data Extraction.
-*   **Summary:** Developed complex parsing algorithms to navigate massive DOM structures and extract highly specific, buried HTML tags to build structured datasets from e-commerce catalogs.
-*   **Keywords:** `BeautifulSoup`, `Selenium`, `Data Extraction`
+**Option 2 — serveur local** (recommandé, évite certaines restrictions liées aux modules ES6)
+```bash
+# Avec Python
+python3 -m http.server 8000
 
----
+# Avec Node.js
+npx serve .
+```
+Puis ouvrir `http://localhost:8000`.
 
-### 🤝 Community & Experience
+## Personnalisation
 
-*   🤖 **Robotics & 3D Printing Instructor:** Teaching and managing kits (like Makeblock and LEGO WeDo) during the summer of 2026.
-*   👻 **Brigade Fantôme:** Proud member of this tech squad, collaborating on intense hackathons and academic projects.
+1. Remplacer les textes placeholder dans `index.html` (nom, titre, section À propos, contact).
+2. Éditer `js/data.js` avec vos vrais projets, compétences, services, expériences et certifications.
+3. Remplacer les images dans `assets/images/` et le CV dans `assets/documents/cv.pdf`.
+4. Mettre à jour les liens GitHub / LinkedIn dans `index.html` (hero et footer).
+5. Créer un formulaire sur [Formspree](https://formspree.io) et remplacer
+   `VOTRE_ID_FORMSPREE` dans l'attribut `action` du formulaire de contact
+   (`index.html`) par l'identifiant fourni.
+6. Générer un favicon personnalisé si besoin (le fichier actuel dans `favicon/`
+   est un exemple minimal basé sur des initiales).
 
----
+## Déploiement
 
-### 📫 Let's Connect!
+Le site est 100 % statique et compatible avec :
 
-<p align="left">
-  <a href="mailto:ton_email@example.com">
-    <img alt="Email" src="https://img.shields.io/badge/Email-mathieu.soro-blue?style=flat-square&logo=gmail">
-  </a>
-  <a href="https://linkedin.com/in/ton_lien">
-    <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Soro_Mathieu-blue?style=flat-square&logo=linkedin">
-  </a>
-</p>
+- **GitHub Pages** — Settings → Pages → déployer depuis la branche `main`.
+- **Netlify** — glisser-déposer le dossier, ou connecter le dépôt GitHub.
+- **Vercel** — importer le dépôt, aucune configuration de build nécessaire.
 
-*Fun fact: When I'm not writing ETL pipelines or tuning ML models, I'm probably looking into real estate investment strategies or building out a business plan for modern agriculture! 🍅🐌*
+Aucun backend n'est requis pour cette version. Le formulaire de contact dépend
+d'un service externe (Formspree) plutôt que d'un serveur propre — voir la
+section Personnalisation ci-dessus.
+
+## Licence
+
+Libre d'utilisation et d'adaptation pour un usage personnel.
